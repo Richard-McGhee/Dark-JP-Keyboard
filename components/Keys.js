@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 function Keys() {
     let keyData = [
@@ -69,7 +70,7 @@ function Keys() {
         <div>
             {/* keyData.map */}
         </div>
-    );
+    )
 }
 
-export default Keys;
+export default Keys

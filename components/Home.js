@@ -1,5 +1,5 @@
 import React from 'react'
-import Keys from './Keys';
+import Keys from './Keys'
 
 function Home() {
     return ( 
