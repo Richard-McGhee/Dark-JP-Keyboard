@@ -68,7 +68,9 @@ function Keys() {
     ]
     return ( 
         <div>
-            {/* keyData.map */}
+            {keyData.map(item =>(
+                <div>{item}</div>
+            ))}
         </div>
     )
 }
