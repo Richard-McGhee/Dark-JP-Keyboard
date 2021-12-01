@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 
 function Keys() {
     let keyData = [
@@ -30,7 +29,7 @@ function Keys() {
         {k70: "P", k71: "せ"},
         {k72: "{", k73: "[", k74: "゛", k75: "「"},
         {k76: "}", k77: "]", k78: "゜", k79: "」"},
-        {k80: "|", k81: " \ ", k82: "む"},
+        {k80: "|", k81: " Back Slash ", k82: "む"},
         {k83: "Caps"},
         {k84: "A", k85: "ち"},
         {k86: "S", k87: "と"},

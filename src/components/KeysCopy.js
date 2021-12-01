@@ -1,6 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const KeyStyles = styled.div`
+    background-color: black;
+    color: white;
+    div{
+        border: 2px solid white;
+    }
+`
+
 function Keys() {
     let keyData = [
         ["~", "`", "ろ"],
@@ -30,7 +38,7 @@ function Keys() {
         ["P", "せ"],
         ["{", "[", "゛", "「"],
         ["}", "]", "゜", "」"],
-        ["|", " \ ", "む"],
+        ["|", " Back Slash ", "む"],
         ["Caps"],
         ["A", "ち"],
         ["S", "と"],
@@ -67,11 +75,13 @@ function Keys() {
         ["R.Ctrl"]        
     ]
     return ( 
-        <div>
-            {keyData.map(item =>(
-                <div>{item}</div>
-            ))}
-        </div>
+        <KeyStyles>
+            <div>
+                {keyData.map(item =>(
+                    <div>{item}</div>
+                ))}
+            </div>
+        </KeyStyles>
     )
 }
 
