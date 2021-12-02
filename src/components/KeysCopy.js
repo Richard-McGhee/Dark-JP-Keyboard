@@ -6,7 +6,19 @@ const KeyStyles = styled.div`
     color: white;
     div{
         border: 2px solid white;
+        width: 30%;
+        height: 10vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
+    width: 85%;
+    height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
 `
 
 function Keys() {
