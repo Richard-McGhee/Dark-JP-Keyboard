@@ -4,14 +4,16 @@ import styled from 'styled-components'
 const KeyStyles = styled.div`
     background-color: black;
     color: white;
+    position: relative;
     div{
         border: 2px solid white;
-        width: 30%;
-        height: 10vh;
+        width: 6.5%;
+        height: 15vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        positon: absolute;
     }
     width: 85%;
     height: 85vh;
@@ -88,11 +90,11 @@ function Keys() {
     ]
     return ( 
         <KeyStyles>
-            <div>
+            
                 {keyData.map(item =>(
                     <div>{item}</div>
                 ))}
-            </div>
+            
         </KeyStyles>
     )
 }
