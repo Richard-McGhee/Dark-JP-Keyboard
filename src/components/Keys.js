@@ -1,5 +1,5 @@
 import React from 'react'
-import { keyDataAsObjects } from './KeysCopy2'
+import { keyDataAsObjects } from './KeysDataStorage'
 
 function Keys() {
     let keyData = keyDataAsObjects

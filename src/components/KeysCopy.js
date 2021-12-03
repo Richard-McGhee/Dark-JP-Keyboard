@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { keyDataInArrays } from './KeysCopy2'
+import { keyDataInArrays } from './KeysDataStorage'
 
 const KeyStyles = styled.div`
     background-color: black;
@@ -14,7 +14,6 @@ const KeyStyles = styled.div`
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        positon: absolute;
     }
     width: 85%;
     height: 85vh;
