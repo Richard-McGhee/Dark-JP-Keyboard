@@ -1,4 +1,17 @@
+import Keys from "./KeysCopy"
+
+// This keyboard only focuses on keys that are affected by the language ChannelMergerNode, therefor keys such as Esc and the Function keys are not included in the keyboard
+
+// Key Size Notes:
+// Back Space is the first key to be a different sizer and it's slight smaller than a Shift key
+// Tab and |\ are slightly larger than normal keys and the same size
+// Caps and Enter are nearly identical in size but Enter is slightly larger
+// Both Shifts are bigger than Enter and Back Space and are the largest keys, next to Spacebar
+// Both Controls are ever so slightly smaller than Tab, the same for all keys on this row save for Spacebar
+// Spacebar is by far the largest key on this and any KeyboardEvent, perhaps I should make it its own array but based on the talk with my friend I think it should be fine and easy to manipulate using this data setup
+
 let keyDataAsObjects = [
+    // First row of Keys, mirroring the keyboard layout
     {k1: "~", k2: "`", k3: "ろ"},
     {k4: "!", k5: "1", k6: "ぬ"},
     {k7: "@", k8: "2", k9: "ふ"},
@@ -13,6 +26,7 @@ let keyDataAsObjects = [
     {k43: "_", k44: "-", k45: "ほ"},
     {k46: "+", k47: "=", k48: "へ"},
     {k49: "Back Space"},
+    // Second row of Keys, mirroring the keyboard layout
     {k50: "Tab"},
     {k51: "Q", k52: "た"},
     {k53: "W", k54: "て"},
@@ -27,6 +41,7 @@ let keyDataAsObjects = [
     {k72: "{", k73: "[", k74: "゛", k75: "「"},
     {k76: "}", k77: "]", k78: "゜", k79: "」"},
     {k80: "|", k81: " Back Slash ", k82: "む"},
+    // Third row of Keys, mirroring the keyboard layout
     {k83: "Caps"},
     {k84: "A", k85: "ち"},
     {k86: "S", k87: "と"},
@@ -40,6 +55,7 @@ let keyDataAsObjects = [
     {k102: ":", k103: ";", k104: "れ"},
     {k105: "Dbl Quote", k106: " ' ", k107: "け"},
     {k108: "Enter"},
+    // Fourth row of Keys, mirroring the keyboard layout
     {k108: "L.Shift"},
     {k109: "Z", k110: "つ", k111: "っ"},
     {k112: "X", k113: "さ"},
@@ -52,6 +68,7 @@ let keyDataAsObjects = [
     {k128: ">", k129: ".", k130: "る", k131: "。"},
     {k132: "?", k133: "/", k134: "め", k135: "・"},
     {k136: "R.Shift"},
+    // Last row of Keys, mirroring the keyboard layout
     {k137: "L.Ctrl"},
     {k138: "Fn", k138Alt: "L.Win"},
     {k139: "Win", k139Alt: "L.Alt"},
@@ -64,6 +81,7 @@ let keyDataAsObjects = [
 ]
 
 let keyDataInArrays = [
+    // First row of Keys, mirroring the keyboard layout
     ["~", "`", "ろ"],
     ["!", "1", "ぬ"],
     ["@", "2", "ふ"],
@@ -78,6 +96,7 @@ let keyDataInArrays = [
     ["_", "-", "ほ"],
     ["+", "=", "へ"],
     ["BacSpace"],
+    // Second row of Keys, mirroring the keyboard layout
     ["Tab"],
     ["Q", "た"],
     ["W", "て"],
@@ -92,6 +111,7 @@ let keyDataInArrays = [
     ["{", "[", "゛", "「"],
     ["}", "]", "゜", "」"],
     ["|", " Back Slash ", "む"],
+    // Third row of Keys, mirroring the keyboard layout
     ["Caps"],
     ["A", "ち"],
     ["S", "と"],
@@ -105,6 +125,7 @@ let keyDataInArrays = [
     [",", "semi colon", "れ"],
     ["Dbl Quote", " ' ", "け"],
     ["Enter"],
+    // Fourth row of Keys, mirroring the keyboard layout
     ["L.Shift"],
     ["Z", "つ", "っ"],
     ["X", "さ"],
@@ -117,6 +138,7 @@ let keyDataInArrays = [
     [">", ".", "る", "。"],
     ["?", "/", "め", "・"],
     ["R.Shift"],
+    // Last row of Keys, mirroring the keyboard layout
     ["L.Ctrl"],
     ["Fn", "L.Win"],
     ["Win", "L.Alt"],
@@ -129,6 +151,7 @@ let keyDataInArrays = [
 ]
 
 let keyDataInRows = [
+    // First row of Keys, mirroring the keyboard layout
     [
         ["~", "`", "ろ"],
         ["!", "1", "ぬ"],
@@ -145,6 +168,7 @@ let keyDataInRows = [
         ["+", "=", "へ"],
         ["BacSpace"]
     ],
+    // Second row of Keys, mirroring the keyboard layout
     [
         ["Tab"],
         ["Q", "た"],
@@ -161,6 +185,7 @@ let keyDataInRows = [
         ["}", "]", "゜", "」"],
         ["|", " Back Slash ", "む"]
     ],
+    // Third row of Keys, mirroring the keyboard layout
     [
         ["Caps"],
         ["A", "ち"],
@@ -175,7 +200,8 @@ let keyDataInRows = [
         [",", "semi colon", "れ"],
         ["Dbl Quote", " ' ", "け"],
         ["Enter"]
-        ],
+    ],
+    // Fourth row of Keys, mirroring the keyboard layout
     [
         ["L.Shift"],
         ["Z", "つ", "っ"],
@@ -190,6 +216,7 @@ let keyDataInRows = [
         ["?", "/", "め", "・"],
         ["R.Shift"]
     ],
+    // Last row of Keys, mirroring the keyboard layout
     [
         ["L.Ctrl"],
         ["Fn", "L.Win"],
