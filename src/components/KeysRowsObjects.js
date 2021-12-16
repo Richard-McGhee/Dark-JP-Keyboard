@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { keyDataInRows } from './KeysDataStorage'
+import { keyDataInRowsObjects } from './KeysDataStorage'
 
 const KeyStyles = styled.div`
     background-color: black;
@@ -24,7 +24,7 @@ const KeyStyles = styled.div`
 `
 
 function Keys() {
-    let keyData = keyDataInRows
+    let keyData = keyDataInRowsObjects
     return ( 
         <KeyStyles>
             

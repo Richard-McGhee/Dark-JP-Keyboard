@@ -93,7 +93,7 @@ let keyDataInArrays = [
     [")", "0", "わ", "を"],
     ["_", "-", "ほ"],
     ["+", "=", "へ"],
-    ["BacSpace"],
+    ["Back Space"],
     // Second row of Keys, mirroring the keyboard layout
     ["Tab"],
     ["Q", "た"],
@@ -164,7 +164,7 @@ let keyDataInRows = [
         [")", "0", "わ", "を"],
         ["_", "-", "ほ"],
         ["+", "=", "へ"],
-        ["BacSpace"]
+        ["Back Space"]
     ],
     // Second row of Keys, mirroring the keyboard layout
     [
@@ -228,8 +228,89 @@ let keyDataInRows = [
     ]        
 ]
 
+let keyDataInRowsObjects = [
+    // First row of Keys, mirroring the keyboard layout
+    [
+        [{id: "~"}, {id: "`"}, {id: "ろ"}],
+        [{id: "!"}, {id: "1"}, {id: "ぬ"}],
+        [{id: "@"}, {id: "2"}, {id: "ふ"}],
+        [{id: "#"}, {id: "3"}, {id: "あ"}, {id: "ぁ"}],
+        [{id: "$"}, {id: "4"}, {id: "う"}, {id: "ぅ"}],
+        [{id: "%"}, {id: "5"}, {id: "え"}, {id: "ぇ"}],
+        [{id: "^"}, {id: "6"}, {id: "お"}, {id: "ぉ"}],
+        [{id: "&"}, {id: "7"}, {id: "や"}, {id: "ゃ"}],
+        [{id: "*"}, {id: "8"}, {id: "ゆ"}, {id: "ゅ"}],
+        [{id: "("}, {id: "9"}, {id: "よ"}, {id: "ょ"}],
+        [{id: ")"}, {id: "0"}, {id: "わ"}, {id: "を"}],
+        [{id: "_"}, {id: "-"}, {id: "ほ"}],
+        [{id: "+"}, {id: "="}, {id: "へ"}],
+        [{id: "Back Space"}]
+    ],
+    // Second row of Keys, mirroring the keyboard layout
+    [
+        [{id: "Tab"}],
+        [{id: "Q"}, {id: "た"}],
+        [{id: "W"}, {id: "て"}],
+        [{id: "E"}, {id: "い"}, {id: "ぃ"}],
+        [{id: "R"}, {id: "す"}],
+        [{id: "T"}, {id: "か"}],
+        [{id: "Y"}, {id: "ん"}],
+        [{id: "U"}, {id: "な"}],
+        [{id: "I"}, {id: "に"}],
+        [{id: "O"}, {id: "ら"}],
+        [{id: "P"}, {id: "せ"}],
+        [{id: "{"}, {id: "["}, {id: "゛"}, {id: "「"}],
+        [{id: "}"}, {id: "]"}, {id: "゜"}, {id: "」"}],
+        [{id: "|"}, {id: " Back Slash "}, {id: "む"}]
+    ],
+    // Third row of Keys, mirroring the keyboard layout
+    [
+        ["Caps"],
+        [{id: "A"}, {id: "ち"}],
+        [{id: "S"}, {id: "と"}],
+        [{id: "D"}, {id: "し"}],
+        [{id: "F"}, {id: "は"}],
+        [{id: "G"}, {id: "き"}],
+        [{id: "H"}, {id: "く"}],
+        [{id: "J"}, {id: "ま"}],
+        [{id: "K"}, {id: "の"}],
+        [{id: "L"}, {id: "り"}],
+        [{id: ","}, {id: "semi colon"}, {id: "れ"}],
+        [{id: "Dbl Quote"}, {id: " ' "}, {id: "け"}],
+        [{id: "Enter"}]
+    ],
+    // Fourth row of Keys, mirroring the keyboard layout
+    [
+        ["L.Shift"],
+        [{id: "Z"}, {id: "つ"}, {id: "っ"}],
+        [{id: "X"}, {id: "さ"}],
+        [{id: "C"}, {id: "そ"}],
+        [{id: "V"}, {id: "ひ"}],
+        [{id: "B"}, {id: "こ"}],
+        [{id: "N"}, {id: "み"}],
+        [{id: "M"}, {id: "も"}],
+        [{id: "<"}, {id: ","}, {id: "ね"}, {id: "、"}],
+        [{id: ">"}, {id: "."}, {id: "る"}, {id: "。"}],
+        [{id: "?"}, {id: "/"}, {id: "め"}, {id: "・"}],
+        [{id: "R.Shift"}]
+    ],
+    // Last row of Keys, mirroring the keyboard layout
+    [
+        [{id: "L.Ctrl"}],
+        [{id: "Fn"}, {id: "Alt- L.Win"}],
+        [{id: "Win"}, {id: "Alt- L.Alt"}],
+        [{id: "L.Alt"}, {id: "Alt- None or Space"}],
+        [{id: "Spacebar"}],
+        [{id: "R.Alt"}],
+        [{id: "R.Ctrl"}, {id: "Alt- R.Win"}],
+        [{id: "Menu"}],
+        [{id: "R.Ctrl"}]
+    ]        
+]
+
 export {
     keyDataAsObjects,
     keyDataInArrays,
-    keyDataInRows
+    keyDataInRows,
+    keyDataInRowsObjects
 }
