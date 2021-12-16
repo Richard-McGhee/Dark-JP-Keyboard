@@ -1,6 +1,4 @@
-import Keys from "./KeysCopy"
-
-// This keyboard only focuses on keys that are affected by the language ChannelMergerNode, therefor keys such as Esc and the Function keys are not included in the keyboard
+// This keyboard only focuses on keys that are affected by the language ChannelMergerNode, therefore keys such as Esc and the Function keys are not included in the keyboard
 
 // Key Size Notes:
 // Back Space is the first key to be a different sizer and it's slight smaller than a Shift key
