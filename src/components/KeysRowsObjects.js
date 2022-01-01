@@ -30,8 +30,10 @@ function Keys() {
         <KeyStyles>
             
                 {keyData.map(item =>(
-                    item.map(row => (
-                        <div>{row}</div>
+                    item.map((row, idx) => (
+                        <div key={idx} style={{
+                            width: row.id === "Back Space" ? 80 : 60
+                        }}>{row.id}</div>
                     ))
                 ))}
             

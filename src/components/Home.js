@@ -11,8 +11,8 @@ function Home() {
             </h1>
             {/* <Keys /> */}
             {/* <KeysArrays /> */}
-            <KeysRows />
-            {/* <KeysRowsObjects /> */}
+            {/* <KeysRows /> */}
+            <KeysRowsObjects />
         </div>
     )
 }
