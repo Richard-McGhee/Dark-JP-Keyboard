@@ -2,6 +2,7 @@ import React from 'react'
 import KeysArrays from './KeysArrays'
 import KeysRows from './KeysRows'
 import KeysRowsObjects from './KeysRowsObjects'
+import KeyDataInRowsObjectsWithKeyArrays from './KeysROWithKArrays'
 
 function Home() {
     return ( 
@@ -12,7 +13,8 @@ function Home() {
             {/* <Keys /> */}
             {/* <KeysArrays /> */}
             {/* <KeysRows /> */}
-            <KeysRowsObjects />
+            {/* <KeysRowsObjects /> */}
+            <KeyDataInRowsObjectsWithKeyArrays />
         </div>
     )
 }

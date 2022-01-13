@@ -1,3 +1,8 @@
 body{
   background-color: rgb(141, 137, 137);
 }
+
+.bp {
+  width: 160px;
+  font-size: 25px;
+}
