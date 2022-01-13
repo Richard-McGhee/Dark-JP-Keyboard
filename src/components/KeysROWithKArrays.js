@@ -5,7 +5,7 @@ import { keyDataInRowsObjectsWithKeyArrays } from './KeysDataStorage'
 const KeyStyles = styled.div`
     position: relative;
     border: 5px solid black;
-    color: whitesmoke;
+    color: #E4DDDE;
     background-color: black;
     font-size: 27px;
     width: 85%;
@@ -15,7 +15,7 @@ const KeyStyles = styled.div`
     align-items: center;
     margin: 0 auto;
     div{
-        border: 2px solid whitesmoke;
+        border: 2px solid #E4DDDE;
         width: 6.5%;
         height: 13vh;
         display: flex;

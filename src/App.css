@@ -1,4 +1,16 @@
 body{
-  background-color: rgb(141, 137, 137);
+  background-color: #1D1E18;
+}
+
+a{
+  text-decoration: none;
+  color: #E4DDDE;
+  border: 2px solid #8A6552;
+  margin: 0 2%;
+  padding: .5% 1%;
+}
+a:hover{
+  color: #93032E;
+  border: 3px dashed #D3C422;
 }
 
