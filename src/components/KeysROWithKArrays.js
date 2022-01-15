@@ -5,8 +5,6 @@ import { keyDataInRowsObjectsWithKeyArrays } from './KeysDataStorage'
 const KeyStyles = styled.div`
     position: relative;
     border: 5px solid black;
-    color: #E4DDDE;
-    background-color: black;
     font-size: 27px;
     width: 85%;
     height: 85vh;
@@ -14,6 +12,9 @@ const KeyStyles = styled.div`
     flex-wrap: wrap;
     align-items: center;
     margin: 0 auto;
+    padding: 0 2%;
+    color: #E4DDDE;
+    background-color: black;
     div{
         border: 2px solid #E4DDDE;
         width: 6.5%;
@@ -23,43 +24,33 @@ const KeyStyles = styled.div`
         justify-content: center;
         align-items: center;
     }
-    .BSpace{
-        width: 195px;
+    .BSpace, .Tab, .Caps, .Enter, .Shifts, .Ctrls, .SpcBar{
         font-size: 30px;
     }
     .Tab, .BSlash{
         width: 150px;
-        font-size: 30px;
+    }
+    .BSpace{
+        width: 195px;
     }
     .Caps{
         width: 165px;
-        font-size: 30px;
     }
     .Enter{
         width: 245px;
-        font-size: 30px;
     }
     .Shifts{
         width: 260px;
-        font-size: 30px;
     }
     .Ctrls{
         width: 150px;
-        font-size: 30px;
     }
     .SpcBar{
         width: 769px;
-        font-size: 30px;
         font-weight: bold;
     }
     span{
         margin: 0 auto;
-    }
-    span:nth-child(1){
-        /* margin: 0 6%; */
-    }
-    span:nth-child(2){
-        /* margin: 0 2%; */
     }
     span:nth-child(3){
         margin: 0 40%;
@@ -72,8 +63,21 @@ const KeyStyles = styled.div`
 
 function Keys() {
     let keyData = keyDataInRowsObjectsWithKeyArrays
+    // let [keyColor, setKeyColor] = useState("#E4DDDE")
+    // let [keyBGColor, setKeyBGColor] = useState("#000000")
+
+    // let changeKeyColor = (clr) => {
+    //     setKeyColor(clr)
+    // }
+    // let changeKeyBGColor = (clr) => {
+    //     setKeyBGColor(clr)
+    // }
+    // style={{
+    //             color: keyColor,
+    //             backgroundColor: keyBGColor
+    //         }}
     return ( 
-        <KeyStyles>
+        <KeyStyles >
             
                 {keyData.map(item =>(
                     item.map((row) => (
