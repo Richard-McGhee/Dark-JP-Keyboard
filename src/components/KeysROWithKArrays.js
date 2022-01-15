@@ -92,5 +92,5 @@ function Keys() {
         </KeyStyles>
     )
 }
-
+// style={{color: props.keyColor, background: props.keyBGColor}}
 export default Keys

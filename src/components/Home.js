@@ -1,6 +1,5 @@
 import React from 'react'
 import KeyDataInRowsObjectsWithKeyArrays from './KeysROWithKArrays'
-// import HexForm from './HexForm'
 
 function Home() {
     return ( 

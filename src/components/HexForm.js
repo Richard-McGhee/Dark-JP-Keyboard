@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import KeysRoWithKArrays from './KeysROWithKArrays'
 
 const FormStyles = styled.div`
     form{
@@ -9,10 +10,10 @@ const FormStyles = styled.div`
 
 function HexForm() {
     const [keyColor, setKeyColor ] = useState("#F5F5F5")
-    const [keyBgColor, setKeyBgColor ] = useState("#000000")
+    const [keyBGColor, setKeyBGColor ] = useState("#000000")
     const initValues = {
         color: keyColor,
-        background: keyBgColor
+        background: keyBGColor
     }
 
     const [formState, setFormState] = useState(initValues)
@@ -32,15 +33,16 @@ function HexForm() {
         setKeyColor(clr);
     }
 
-    const submitKeyBgColor = (clr) => {
+    const submitKeyBGColor = (clr) => {
         if(clr.length > 6 || clr.length < 6 ){
             return setIsValid(true);
         }
-        setKeyBgColor(clr);
+        setKeyBGColor(clr);
     }
 
     return ( 
         <FormStyles>
+            
             <form>
                 <label htmlFor="keyBGColorInput">
                     Key Background Color
@@ -49,7 +51,7 @@ function HexForm() {
                     placeholder="Enter 6 Characters with a #"
                     value={formState.background}
                     onChange={handleChange}
-                    onSubmit={isValid ? submitKeyBgColor : null} />
+                    onSubmit={isValid ? submitKeyBGColor : null} />
                 </label>
                 <label htmlFor="KeyColorInput">
                     Key Color
@@ -61,6 +63,7 @@ function HexForm() {
                     onSubmit={isValid ? submitKeyColor : null} />
                 </label>
             </form>
+            <KeysRoWithKArrays value={{keyColor, keyBGColor}} />
         </FormStyles>
      );
 }
