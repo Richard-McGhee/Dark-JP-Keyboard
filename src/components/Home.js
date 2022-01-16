@@ -1,5 +1,4 @@
 import React from 'react'
-import KeyDataInRowsObjectsWithKeyArrays from './KeysROWithKArrays'
 import HexForm from './HexForm'
 import styled from 'styled-components' 
 
@@ -19,7 +18,6 @@ function Home() {
                 <a href="https://www.linkedin.com/in/richardjmcghee/">By: Richard McGhee</a>
             </h1>
             <HexForm />
-            {/* <KeyDataInRowsObjectsWithKeyArrays /> */}
         </HomeStyles>
     )
 }
