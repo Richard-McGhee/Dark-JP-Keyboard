@@ -13,4 +13,11 @@ a:hover{
   color: #93032E;
   border: 3px dashed #D3C422;
 }
+a:nth-child(2){
+  color: #D3C422;
+}
+a:nth-child(2):hover{
+  color: #93032E;
+  border: 3px dashed #D3C422;
+}
 

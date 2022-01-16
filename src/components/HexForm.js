@@ -7,6 +7,14 @@ const FormStyles = styled.div`
         color: #D3C422;
         margin: .5% auto;
         width: 35%;
+        font-size: 17px;
+    }
+    label{
+        margin-right: 2%;
+        padding-right: 1%;
+    }
+    input{
+        margin-left: 2%;
     }
 `
 
