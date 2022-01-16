@@ -13,8 +13,7 @@ const KeyStyles = styled.div`
     align-items: center;
     margin: 0 auto;
     padding: 0 2%;
-    color: #E4DDDE;
-    background-color: black;
+    
     div{
         border: 2px solid #E4DDDE;
         width: 6.5%;
@@ -61,7 +60,7 @@ const KeyStyles = styled.div`
     }
 `
 
-function Keys() {
+function Keys(props) {
     let keyData = keyDataInRowsObjectsWithKeyArrays
     // let [keyColor, setKeyColor] = useState("#E4DDDE")
     // let [keyBGColor, setKeyBGColor] = useState("#000000")
@@ -77,7 +76,7 @@ function Keys() {
     //             backgroundColor: keyBGColor
     //         }}
     return ( 
-        <KeyStyles >
+        <KeyStyles style={{color: props.keyColor, background: props.keyBGColor}} >
             
                 {keyData.map(item =>(
                     item.map((row) => (
@@ -92,5 +91,5 @@ function Keys() {
         </KeyStyles>
     )
 }
-// style={{color: props.keyColor, background: props.keyBGColor}}
+// 
 export default Keys

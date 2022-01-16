@@ -4,7 +4,9 @@ import KeysRoWithKArrays from './KeysROWithKArrays'
 
 const FormStyles = styled.div`
     form{
-        
+        color: #D3C422;
+        margin: .5% auto;
+        width: 35%;
     }
 `
 
@@ -63,7 +65,7 @@ function HexForm() {
                     onSubmit={isValid ? submitKeyColor : null} />
                 </label>
             </form>
-            <KeysRoWithKArrays value={{keyColor, keyBGColor}} />
+            <KeysRoWithKArrays keyColor={keyColor} keyBGColor={keyBGColor} />
         </FormStyles>
      );
 }
