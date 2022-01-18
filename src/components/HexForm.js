@@ -45,24 +45,27 @@ function HexForm() {
     }
     const submitKeyColor = (clr, evt) => {
         evt.preventDefault()
-        if(clr.length === 7 ){
-            return setIsValid(true);
+        if(formState.color.length === 7 ){
+             setIsValid(true)
         }
-        setKeyColor(formState.keyColor);
+        setKeyColor(formState.color)
+        console.log(formState)
     }
-
+    
     const submitKeyBGColor = (clr, evt) => {
         evt.preventDefault()
-        if(clr.length === 7 ){
-            return setIsValid(true);
+        if(formState.background.length === 7 ){
+            return setIsValid(true)
         }
-        setKeyBGColor(clr);
+        setKeyBGColor(formState.background)
+        console.log(formState)
     }
-
+    
+    console.log(formState)
     return ( 
         <FormStyles>
             
-            <form>
+            <form onSubmit={submitKeyColor}>
                 <label htmlFor="keyBGColorInput">
                     Key Background Color
                     <input type="text"
@@ -82,7 +85,7 @@ function HexForm() {
                     onChange={handleChange}
                     onSubmit={isValid ? submitKeyColor : null} />
                 </label>
-                {/* <button onClick={submitKeyColor}>Submit Key</button> */}
+                {/* <button onClick={isValid ? submitKeyColor : null}>Submit Key</button> */}
             </form>
             <KeysRoWithKArrays keyColor={keyColor} keyBGColor={keyBGColor} />
         </FormStyles>
