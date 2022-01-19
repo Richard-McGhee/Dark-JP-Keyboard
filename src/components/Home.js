@@ -8,6 +8,24 @@ const HomeStyles = styled.div`
         margin-right: auto;
         width: 50%;
     }
+
+    /* Media Queries */
+    @media(max-width: 1600px){
+        h1{
+            width: 60%;
+        }
+    }
+    @media(max-width: 1024px){
+       h1{
+            width: 100%;
+        } 
+    }
+    @media(max-width: 768px){
+
+    }
+    @media(max-width: 480px){
+
+    }
 `
 
 function Home() {

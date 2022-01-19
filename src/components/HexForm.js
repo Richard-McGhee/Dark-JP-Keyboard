@@ -23,6 +23,20 @@ const FormStyles = styled.div`
         color: #93032E;
         border-radius: 5px;
     }
+
+    /* Media Queries */
+    @media(max-width: 1600){
+
+    }
+    @media(max-width: 1024px){
+        
+    }
+    @media(max-width: 768px){
+
+    }
+    @media(max-width: 480px){
+
+    }
 `
 
 function HexForm() {

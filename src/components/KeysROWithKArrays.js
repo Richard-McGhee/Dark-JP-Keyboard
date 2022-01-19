@@ -58,6 +58,46 @@ const KeyStyles = styled.div`
         margin: 0 auto;
         font-size: 22px;
     }
+
+    /* Media Queries */
+    @media(max-width: 1600px){
+        .BSpace{
+            width: 145px;
+        }
+        .BSpace span{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0 0 0 20%;
+        }
+        .Tab{
+            width: 110px;
+        }
+        .BSlash{
+            width: 125px;
+        }
+        .Caps{
+            width: 125px;
+        }
+        .Enter{
+            width: 205px;
+        }
+        .Shifts{
+            width: 210px;
+        }
+        .SpcBar{
+            width: 579px;
+        }
+    }
+    @media(max-width: 1024px){
+        
+    }
+    @media(max-width: 768px){
+
+    }
+    @media(max-width: 480px){
+
+    }
 `
 
 function Keys(props) {
