@@ -48,9 +48,11 @@ const FormStyles = styled.div`
 function HexForm() {
     const [keyColor, setKeyColor ] = useState("#F5F5F5")
     const [keyBGColor, setKeyBGColor ] = useState("#000000")
+    const [borderColor, setBorderColor] = useState("#E4DDDE")
     const initValues = {
         color: keyColor,
-        background: keyBGColor
+        background: keyBGColor,
+        border: borderColor
     }
 
     const [formState, setFormState] = useState(initValues)
@@ -63,51 +65,70 @@ function HexForm() {
             ...formState,
             [evt.target.name]: evt.target.value})
     }
-    const submitKeyColor = (clr, evt) => {
+    const submitKeyColor = (evt) => {
         evt.preventDefault()
         if(formState.color.length === 7 ){
-             setIsValid(true)
-        }
-        setKeyColor(formState.color)
-        console.log(formState)
-    }
-    
-    const submitKeyBGColor = (clr, evt) => {
-        evt.preventDefault()
-        if(formState.background.length === 7 ){
+            setKeyColor(formState.color)
             return setIsValid(true)
         }
-        setKeyBGColor(formState.background)
-        console.log(formState)
+    }
+    
+    const submitKeyBGColor = (evt) => {
+        evt.preventDefault()
+        
+        if(formState.background.length === 7 ){
+            setKeyBGColor(formState.background)
+            return setIsValid(true)
+        }
+    }
+
+    const submitBDColor = (evt) => {
+        evt.preventDefault()
+        
+        if(formState.background.length === 7 ){
+            setBorderColor(formState.border)
+            return setIsValid(true)
+        }
     }
     
     console.log(formState)
     return ( 
         <FormStyles>
             
-            <form onSubmit={submitKeyColor}>
+            <form onSubmit={submitKeyBGColor}>
                 <label htmlFor="keyBGColorInput">
                     Key Background Color
+                    
                     <input type="text"
-                    name="background"
-                    placeholder="Enter 6 Characters with a #"
-                    value={formState.background}
-                    onChange={handleChange}
-                    onSubmit={isValid ? submitKeyBGColor : null} />
+                        name="background"
+                        placeholder="Enter 6 Characters with a #"
+                        value={formState.background}
+                        onChange={handleChange}
+                    />  
+
                 </label>
-                {/* <button onClick={isValid ? submitKeyBGColor : null}>Submit BG</button> */}
-                <label htmlFor="KeyColorInput">
+            </form>
+            <form onSubmit={submitKeyColor}>
+            <label htmlFor="KeyColorInput">
                     Key Color
                     <input type="text"
                     name="color"
                     placeholder="Enter 6 Characters with a #"
                     value={formState.color}
-                    onChange={handleChange}
-                    onSubmit={isValid ? submitKeyColor : null} />
+                    onChange={handleChange} />
                 </label>
-                {/* <button onClick={isValid ? submitKeyColor : null}>Submit Key</button> */}
             </form>
-            <KeysRoWithKArrays keyColor={keyColor} keyBGColor={keyBGColor} />
+            <form onSubmit={submitBDColor}>
+            <label htmlFor="KeyColorInput">
+                    Border Color
+                    <input type="text"
+                    name="border"
+                    placeholder="Enter 6 Characters with a #"
+                    value={formState.border}
+                    onChange={handleChange} />
+                </label>
+            </form>
+            <KeysRoWithKArrays keyColor={keyColor} keyBGColor={keyBGColor} borderColor={borderColor} />
         </FormStyles>
      );
 }
