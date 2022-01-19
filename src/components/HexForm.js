@@ -25,15 +25,21 @@ const FormStyles = styled.div`
     }
 
     /* Media Queries */
+    /* Trying to match up with my firefox breakpoint */
     @media(max-width: 1600){
 
     }
+    /* Laptop */
     @media(max-width: 1024px){
-        
+        form{
+            width: 70%;
+        }
     }
+    /* Tablet */
     @media(max-width: 768px){
 
     }
+    /* Mobile */
     @media(max-width: 480px){
 
     }

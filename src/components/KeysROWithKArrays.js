@@ -60,6 +60,7 @@ const KeyStyles = styled.div`
     }
 
     /* Media Queries */
+    /* Trying to match up with my firefox breakpoint */
     @media(max-width: 1600px){
         .BSpace{
             width: 145px;
@@ -89,12 +90,15 @@ const KeyStyles = styled.div`
             width: 579px;
         }
     }
+    /* Laptop */
     @media(max-width: 1024px){
         
     }
+    /* Tablet */
     @media(max-width: 768px){
 
     }
+    /* Mobile */
     @media(max-width: 480px){
 
     }

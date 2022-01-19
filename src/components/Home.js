@@ -10,23 +10,31 @@ const HomeStyles = styled.div`
     }
 
     /* Media Queries */
+    /* Trying to match up with my firefox breakpoint */
     @media(max-width: 1600px){
         h1{
             width: 60%;
         }
     }
+    /* Laptop */
     @media(max-width: 1024px){
-       h1{
+        h1{
             width: 100%;
         } 
     }
+    /* Tablet */
     @media(max-width: 768px){
-
+        h1{
+            width: 100%;
+        }      
     }
+    /* Mobile */
     @media(max-width: 480px){
-
+        h1{
+            width: 100%;
+        } 
     }
-`
+ `
 
 function Home() {
     return ( 
