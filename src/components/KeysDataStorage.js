@@ -324,7 +324,7 @@ let keyDataInRowsObjectsWithKeyArrays = [
         [{id: ")", chars: [")", "0", "わ", "を"]}],
         [{id: "_", chars: ["_", "-", "ほ"]}],
         [{id: "+", chars: ["+", "=", "へ"]}],
-        [{id: "Back Space", chars: ["Back Space"]}]
+        [{id: "Back Space", chars: ["B.Space"]}]
     ],
     // Second row of Keys, mirroring the keyboard layout
     [
@@ -341,7 +341,7 @@ let keyDataInRowsObjectsWithKeyArrays = [
         [{id: "P", chars: ["P", "せ"]}],
         [{id: "{", chars: ["{", "[", "゛", "「"]}],
         [{id: "}", chars: ["}", "]", "゜", "」"]}],
-        [{id: "|", chars: ["|", "Back Slash", "む"]}]
+        [{id: "|", chars: ["|", "B.Slash", "む"]}]
     ],
     // Third row of Keys, mirroring the keyboard layout
     [

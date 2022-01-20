@@ -3,10 +3,12 @@ import styled from 'styled-components'
 import KeysRoWithKArrays from './KeysROWithKArrays'
 
 const FormStyles = styled.div`
+    display: flex;
+    flex-wrap: wrap;
     form{
         color: #D3C422;
         margin: .5% auto;
-        width: 45%;
+        width: 30%;
         font-size: 17px;
     }
     label{
@@ -30,9 +32,17 @@ const FormStyles = styled.div`
 
     }
     /* Laptop */
-    @media(max-width: 1024px){
+    @media(max-width: 1440px){
         form{
-            width: 70%;
+            width: 25%;
+        }
+    }
+    /* Laptop 2 */
+    @media(max-width: 1024px){
+        display: flex;
+        flex-wrap: wrap;
+        form{
+            width: 20%;
         }
     }
     /* Tablet */
@@ -91,25 +101,22 @@ function HexForm() {
         }
     }
     
-    console.log(formState)
     return ( 
         <FormStyles>
             
             <form onSubmit={submitKeyBGColor}>
                 <label htmlFor="keyBGColorInput">
                     Key Background Color
-                    
                     <input type="text"
                         name="background"
                         placeholder="Enter 6 Characters with a #"
                         value={formState.background}
                         onChange={handleChange}
                     />  
-
                 </label>
             </form>
             <form onSubmit={submitKeyColor}>
-            <label htmlFor="KeyColorInput">
+                <label htmlFor="KeyColorInput">
                     Key Color
                     <input type="text"
                     name="color"
@@ -119,7 +126,7 @@ function HexForm() {
                 </label>
             </form>
             <form onSubmit={submitBDColor}>
-            <label htmlFor="KeyColorInput">
+                <label htmlFor="KeyColorInput">
                     Border Color
                     <input type="text"
                     name="border"
@@ -128,7 +135,11 @@ function HexForm() {
                     onChange={handleChange} />
                 </label>
             </form>
-            <KeysRoWithKArrays keyColor={keyColor} keyBGColor={keyBGColor} borderColor={borderColor} />
+            <KeysRoWithKArrays 
+                keyColor={isValid ? keyColor : formState.color} 
+                keyBGColor={isValid ? keyBGColor : formState.background} 
+                borderColor={isValid ? borderColor : formState.border} 
+            />
         </FormStyles>
      );
 }

@@ -17,6 +17,12 @@ const HomeStyles = styled.div`
         }
     }
     /* Laptop */
+    @media(max-width: 1440px){
+        h1{
+            width: 70%;
+        }
+    }
+    /* Laptop 2 */
     @media(max-width: 1024px){
         h1{
             width: 100%;
@@ -26,6 +32,7 @@ const HomeStyles = styled.div`
     @media(max-width: 768px){
         h1{
             width: 100%;
+            display: flex;
         }      
     }
     /* Mobile */

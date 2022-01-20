@@ -86,17 +86,97 @@ const KeyStyles = styled.div`
         .Shifts{
             width: 210px;
         }
+        
         .SpcBar{
             width: 579px;
         }
     }
     /* Laptop */
-    @media(max-width: 1024px){
+    @media(max-width: 1440px){
+        .BSpace{
+            width: 125px;
+        }
+        .BSpace span{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0;
+        }
+        .Tab{
+            width: 90px;
+        }
+        .BSlash{
+            width: 115px;
+        }
+        .Caps{
+            width: 105px;
+        }
+        .Enter{
+            width: 185px;
+        }
+        .Shifts{
+            width: 187px;
+        }
         
+        .SpcBar{
+            width: 485px;
+        }
+    }
+    /* Laptop 2 */
+    @media(max-width: 1024px){
+        font-size: 25px;
+        .BSpace{
+            width: 75px;
+            font-size: 17px;
+        }
+        .Tab{
+            width: 60px;
+        }
+        .BSlash{
+            width: 75px;
+        }
+        .Caps{
+            width: 85px;
+        }
+        .Enter{
+            width: 105px;
+        }
+        .Shifts{
+            width: 125px;
+        }
+        .Ctrls{
+            width: 145px;
+        }
+        .SpcBar{
+            width: 259px;
+        }
     }
     /* Tablet */
     @media(max-width: 768px){
-
+        .BSpace{
+            width: 6.5%;
+        }
+        .Tab{
+            width: 6.5%;
+        }
+        .BSlash{
+            width: 6.5%;
+        }
+        .Caps{
+            width: 9.5%;
+        }
+        .Enter{
+            width: 11%;
+        }
+        .Shifts{
+            width: 90px;
+        }
+        .Ctrls{
+            width: 100px;
+        }
+        .SpcBar{
+            width: 205px;
+        }
     }
     /* Mobile */
     @media(max-width: 480px){
@@ -126,7 +206,7 @@ function Keys(props) {
                     item.map((row) => (
                         row.map((chara, idx) => (
                             <div style={{border: `2px solid ${props.borderColor}`}} key={idx} className={chara.id === "Back Space" ? "BSpace" : "" || chara.id === "Tab" ? "Tab" : "" || chara.id === "|" ? "BSlash" : "" || chara.id === "Caps" ? "Caps" : "" || chara.id === "Enter" ? "Enter" : ""|| chara.id === "L.Shift" ? "Shifts" : "" || chara.id === "R.Shift" ? "Shifts" : "" ||chara.id === "L.Ctrl" ? "Ctrls" : "" || chara.id === "R.Ctrl" ? "Ctrls" : "" || chara.id === "Spacebar" ? "SpcBar" : ""}>{chara.chars.map(ch => (
-                                <span>{ch}</span>
+                                <span key={ch[0]}>{ch}</span>
                             ))}</div>
                         ))
                     ))
