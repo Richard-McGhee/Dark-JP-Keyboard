@@ -16,6 +16,20 @@ const HomeStyles = styled.div`
             width: 60%;
         }
     }
+    /* Next Attempt at Firefox Breakpoint */
+    @media(max-width: 1580px){
+        h1{
+            width: 100%;
+            margin-left: 15%;
+        }
+    }
+    /* Next Attempt at Firefox Breakpoint */
+    @media(max-width: 1500px){
+        h1{
+            width: 100%;
+            margin-left: 15%;
+        }
+    }
     /* Laptop */
     @media(max-width: 1440px){
         h1{

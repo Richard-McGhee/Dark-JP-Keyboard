@@ -91,6 +91,66 @@ const KeyStyles = styled.div`
             width: 579px;
         }
     }
+    /* Next Attempt at Firefox Breakpoint */
+    @media(max-width: 1580px){
+        .BSpace{
+            width: 140px;
+        }
+        .BSpace span{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-right: 15%;
+        }
+        .Tab{
+            width: 105px;
+        }
+        .BSlash{
+            width: 117px;
+        }
+        .Caps{
+            width: 125px;
+        }
+        .Enter{
+            width: 185px;
+        }
+        .Shifts{
+            width: 198px;
+        }
+        .SpcBar{
+            width: 545px;
+        }
+    }
+    /* Next Attempt at Firefox Breakpoint */
+    @media(max-width: 1500px){
+        .BSpace{
+            width: 140px;
+        }
+        .BSpace span{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-right: 15%;
+        }
+        .Tab{
+            width: 105px;
+        }
+        .BSlash{
+            width: 117px;
+        }
+        .Caps{
+            width: 125px;
+        }
+        .Enter{
+            width: 185px;
+        }
+        .Shifts{
+            width: 198px;
+        }
+        .SpcBar{
+            width: 525px;
+        }
+    }
     /* Laptop */
     @media(max-width: 1440px){
         .BSpace{
