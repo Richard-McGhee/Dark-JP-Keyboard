@@ -81,14 +81,14 @@ const KeyStyles = styled.div`
             width: 125px;
         }
         .Enter{
-            width: 205px;
+            width: 200px;
         }
         .Shifts{
-            width: 210px;
+            width: 207px;
         }
         
         .SpcBar{
-            width: 579px;
+            width: 559px;
         }
     }
     /* Next Attempt at Firefox Breakpoint */

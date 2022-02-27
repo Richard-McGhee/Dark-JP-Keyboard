@@ -18,11 +18,11 @@ function createMainWindow() {
 	mainWindow = new BrowserWindow({
 		width: 1600,
 		height: 900,
-		resizable: true,
+		resizable: false,
 		x: x,
 		y: y,
 		center: true,
-		icon: `${__dirname}/icon.png`,
+		icon: `${__dirname}/Gold.png`,
 		webPreferences: {
 			nodeIntegration: false,
 			nodeIntegrationInWorker: true,

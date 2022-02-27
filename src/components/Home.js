@@ -13,7 +13,8 @@ const HomeStyles = styled.div`
     /* Trying to match up with my firefox breakpoint */
     @media(max-width: 1600px){
         h1{
-            width: 60%;
+            width: 70%;
+            margin-top: .6%;
         }
     }
     /* Next Attempt at Firefox Breakpoint */

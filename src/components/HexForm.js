@@ -28,8 +28,10 @@ const FormStyles = styled.div`
 
     /* Media Queries */
     /* Trying to match up with my firefox breakpoint */
-    @media(max-width: 1500){
-        
+    @media(max-width: 1600px){
+        form{
+            width: 25%;
+        }
     }
     /* Laptop */
     @media(max-width: 1440px){
